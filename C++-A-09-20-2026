@@ -69,9 +69,17 @@ int main() {
     cout << "p || q: " << (p || q) << endl; // OR -> true
     cout << "!p: " << (!p) << endl;          // NOT -> false
 
-    // ----- Assignment operators -----
-    int score = 50;
-    score += 10; // same as score = score + 10
-    cout << "\nscore after += 10: " << score << endl;
+   // ----- Assignment operators -----
+   int score = 50;
+  score += 10;   // same as score = score + 10
+  cout << "\nscore after += 10: " << score << endl;
+  score *= 2;   // same as score = score * 2
+  cout << "score after *= 2: " << score << endl;
 
+   // ----- Increment / decrement -----
+  int counter = 5;
+  cout << "\ncounter++ (post): " << counter++ << endl; // prints 5, THEN increments
+  cout << "counter now: " << counter << endl;           // now 6
+  cout << "++counter (pre): " << ++counter << endl;   // increments THEN prints -> 7
 
+  return 0;
